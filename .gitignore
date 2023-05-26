@@ -1,7 +1,8 @@
 *.gem
 *.rbc
 /.config
-/coverage/
+/coverage/*
+!/coverage/.resultset.json
 /InstalledFiles
 /pkg/
 /spec/reports/
@@ -9,6 +10,11 @@
 /test/tmp/
 /test/version_tmp/
 /tmp/
+
+/lookbook/log/*
+/lookbook/tmp/*
+!/lookbook/log/.keep
+!/lookbook/tmp/.keep
 
 # Used by dotenv library to load environment variables.
 # .env
