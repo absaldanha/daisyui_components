@@ -7,15 +7,26 @@ module DaisyUI
       attr_reader :props
 
       def self.inherited(subclass)
-        subclass.modifiers = []
+        subclass.modifiers = modifiers.dup
+        subclass.component_class = component_class.dup
+        subclass.default_props = default_props.dup
       end
 
       class << self
-        attr_accessor :modifiers
+        attr_writer :modifiers
         attr_accessor :component_class
+        attr_writer :default_props
 
         def modifier(name, *classes)
           self.modifiers << [name, classes]
+        end
+
+        def modifiers
+          @modifiers ||= []
+        end
+
+        def default_props
+          @default_props ||= {}
         end
       end
 
@@ -32,6 +43,7 @@ module DaisyUI
         props.dup
           .then { |hash| apply_component_class(hash) }
           .then { |hash| apply_modifiers(hash) }
+          .then { |hash| apply_default_props(hash) }
       end
 
       def apply_component_class(hash)
@@ -48,6 +60,13 @@ module DaisyUI
         hash
       end
 
+      def apply_default_props(hash)
+        return hash unless component_default_props
+
+        hash.merge!(component_default_props)
+        hash
+      end
+
       def applicable_modifers
         component_modifiers.select do |component_modifier|
           modifiers.include?(component_modifier.first)
@@ -60,6 +79,10 @@ module DaisyUI
 
       def component_class
         self.class.component_class
+      end
+
+      def component_default_props
+        self.class.default_props
       end
     end
   end

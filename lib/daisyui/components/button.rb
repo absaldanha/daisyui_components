@@ -3,6 +3,10 @@
 module DaisyUI
   module Components
     class Button < Base
+      include PolymorphicElement
+
+      self.default_element = :button
+
       self.component_class = "btn"
 
       modifier :primary, "btn-primary"
@@ -30,7 +34,7 @@ module DaisyUI
       modifier :square, "btn-square"
 
       def template(&)
-        button(**full_props, &)
+        polymorphic_element(**full_props, &)
       end
     end
   end

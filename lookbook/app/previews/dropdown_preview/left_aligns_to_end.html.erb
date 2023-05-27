@@ -1,0 +1,17 @@
+<div style="padding-left:200px;padding-top:100px;">
+  <%=
+    DaisyUI::Components::Dropdown.call(:top, :end) do |dropdown|
+      dropdown.toggle { "Click" }
+      dropdown.menu(element: :ul, class: "p-2 shadow bg-base-100 rounded-box w-52") do
+        # Using dropdown to render on lookbook
+        dropdown.li do
+          dropdown.a { "Item 1" }
+        end
+
+        dropdown.li do
+          dropdown.a { "Item 2" }
+        end
+      end
+    end.html_safe
+  %>
+</div>

@@ -148,6 +148,12 @@ module DaisyUI
 
         assert_selector "button[class='btn btn-square']"
       end
+
+      def test_renders_with_polymorphic_element
+        render Button.new(element: :input)
+
+        assert_selector "input[class='btn']"
+      end
     end
   end
 end
