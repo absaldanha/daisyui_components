@@ -141,6 +141,28 @@ class ButtonPreview < Lookbook::Preview
     render DaisyUI::Components::Button.new(:disabled) { "Button" }
   end
 
+  #@!group Button with different HTML tags
+  def anchor_button
+    render DaisyUI::Components::Button.new(element: :a) { "Link" }
+  end
+
+  def button
+    render DaisyUI::Components::Button.new { "Button" }
+  end
+
+  def input_button
+    render DaisyUI::Components::Button.new(element: :input, type: "button", value: "Button")
+  end
+
+  def submit_button
+    render DaisyUI::Components::Button.new(element: :input, type: "submit", value: "Submit")
+  end
+
+  def reset_button
+    render DaisyUI::Components::Button.new(element: :input, type: "reset", value: "Reset")
+  end
+  #@!endgroup
+
   #@!group Square Button
   def square
     render DaisyUI::Components::Button.new(:square) { "X" }
