@@ -39,6 +39,10 @@ module DaisyUI
 
       protected
 
+      def modifier?(name)
+        applicable_modifers.find { |modifier| modifier.first == name }
+      end
+
       def full_props
         props.dup
           .then { |hash| apply_component_class(hash) }
