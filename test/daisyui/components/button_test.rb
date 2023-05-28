@@ -76,7 +76,7 @@ module DaisyUI
 
         assert_selector "button[class='btn btn-outline']"
       end
-      
+
       def test_renders_button_with_active_modifier
         render Button.new(:active)
 

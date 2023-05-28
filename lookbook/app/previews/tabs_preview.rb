@@ -25,7 +25,7 @@ class TabsPreview < Lookbook::Preview
     end
   end
 
-  #@!group Sizes
+  # @!group Sizes
 
   def extra_small
     render DaisyUI::Components::Tabs.new(:xs) do |tabs|
@@ -59,5 +59,5 @@ class TabsPreview < Lookbook::Preview
     end
   end
 
-  #@!endgroup
+  # @!endgroup
 end

@@ -18,7 +18,7 @@ module DaisyUI
         attr_writer :default_props
 
         def modifier(name, *classes)
-          self.modifiers << [name, classes]
+          modifiers << [name, classes]
         end
 
         def modifiers
