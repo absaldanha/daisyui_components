@@ -5,8 +5,8 @@ class ButtonPreview < Lookbook::Preview
     render DaisyUI::Components::Button.new { "Button" }
   end
 
-  #@!group Brand Colors
-  def default
+  # @!group Brand Colors
+  def default_color
     render DaisyUI::Components::Button.new { "Button" }
   end
 
@@ -29,9 +29,9 @@ class ButtonPreview < Lookbook::Preview
   def link
     render DaisyUI::Components::Button.new(:link) { "Button" }
   end
-  #@!endgroup
+  # @!endgroup
 
-  #@!group Active Buttons
+  # @!group Active Buttons
   def default_active
     render DaisyUI::Components::Button.new(:active) { "Button" }
   end
@@ -55,9 +55,9 @@ class ButtonPreview < Lookbook::Preview
   def link_active
     render DaisyUI::Components::Button.new(:link, :active) { "Button" }
   end
-  #@!endgroup
+  # @!endgroup
 
-  #@!group State Colors
+  # @!group State Colors
   def info
     render DaisyUI::Components::Button.new(:info) { "Button" }
   end
@@ -73,9 +73,9 @@ class ButtonPreview < Lookbook::Preview
   def error
     render DaisyUI::Components::Button.new(:error) { "Button" }
   end
-  #@!endgroup
+  # @!endgroup
 
-  #@!group Outiline Buttons
+  # @!group Outiline Buttons
   def default_outline
     render DaisyUI::Components::Button.new(:outline) { "Button" }
   end
@@ -91,9 +91,9 @@ class ButtonPreview < Lookbook::Preview
   def accent_outline
     render DaisyUI::Components::Button.new(:accent, :outline) { "Button" }
   end
-  #@!endgroup
+  # @!endgroup
 
-  #@!group Outline with State Colors
+  # @!group Outline with State Colors
   def info_outline
     render DaisyUI::Components::Button.new(:info, :outline) { "Button" }
   end
@@ -109,9 +109,9 @@ class ButtonPreview < Lookbook::Preview
   def error_outline
     render DaisyUI::Components::Button.new(:error, :outline) { "Button" }
   end
-  #@!endgroup
+  # @!endgroup
 
-  #@!group Sizes
+  # @!group Sizes
   def lg
     render DaisyUI::Components::Button.new(:lg) { "Button" }
   end
@@ -127,7 +127,7 @@ class ButtonPreview < Lookbook::Preview
   def xs
     render DaisyUI::Components::Button.new(:xs) { "Button" }
   end
-  #@!endgroup
+  # @!endgroup
 
   def wide
     render DaisyUI::Components::Button.new(:wide) { "Button" }
@@ -141,7 +141,7 @@ class ButtonPreview < Lookbook::Preview
     render DaisyUI::Components::Button.new(:disabled) { "Button" }
   end
 
-  #@!group Button with different HTML tags
+  # @!group Button with different HTML tags
   def anchor_button
     render DaisyUI::Components::Button.new(element: :a) { "Link" }
   end
@@ -161,9 +161,9 @@ class ButtonPreview < Lookbook::Preview
   def reset_button
     render DaisyUI::Components::Button.new(element: :input, type: "reset", value: "Reset")
   end
-  #@!endgroup
+  # @!endgroup
 
-  #@!group Square Button
+  # @!group Square Button
   def square
     render DaisyUI::Components::Button.new(:square) { "X" }
   end
@@ -171,9 +171,9 @@ class ButtonPreview < Lookbook::Preview
   def square_outline
     render DaisyUI::Components::Button.new(:square, :outline) { "X" }
   end
-  #@!endgroup
+  # @!endgroup
 
-  #@!group Circle Button
+  # @!group Circle Button
   def circle
     render DaisyUI::Components::Button.new(:circle) { "X" }
   end
@@ -181,7 +181,7 @@ class ButtonPreview < Lookbook::Preview
   def circle_outline
     render DaisyUI::Components::Button.new(:circle, :outline) { "X" }
   end
-  #@!endgroup
+  # @!endgroup
 
   def block
     render DaisyUI::Components::Button.new(:block) { "Button" }
