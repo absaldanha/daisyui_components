@@ -1,0 +1,19 @@
+<div class="w-96">
+  <%= DaisyUI::Components::Chat.call(:start) do |chat| %>
+    <% chat.header do %>
+      <% chat.plain "Obi-Wan Kenobi" %>
+      <% chat.time(class: "text-xs opacity-50") { "2 hours ago" } %>
+    <% end %>
+    <% chat.bubble { "You were my brother, Anakin" } %>
+    <% chat.footer(class: "opacity-50") { "Delivered" }%>
+  <% end.html_safe %>
+
+  <%= DaisyUI::Components::Chat.call(:start) do |chat| %>
+    <% chat.header do %>
+      <% chat.plain "Obi-Wan Kenobi" %>
+      <% chat.time(class: "text-xs opacity-50") { "2 hours ago" } %>
+    <% end %>
+    <% chat.bubble { "I loved you." } %>
+    <% chat.footer(class: "opacity-50") { "Delivered" }%>
+  <% end.html_safe %>
+</div>

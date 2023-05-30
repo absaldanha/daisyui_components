@@ -1,0 +1,28 @@
+<div class="w-96">
+  <%= DaisyUI::Components::Chat.call(:start) do |chat| %>
+    <% chat.avatar do %>
+      <% chat.div(class: "w-10 rounded-full") do %>
+        <% chat.img(src: "/photo_avatar.jpg") %>
+      <% end %>
+    <% end %>
+    <% chat.bubble { "It was said that you would destroy the Sith, not join them." } %>
+  <% end.html_safe %>
+
+  <%= DaisyUI::Components::Chat.call(:start) do |chat| %>
+    <% chat.avatar do %>
+      <% chat.div(class: "w-10 rounded-full") do %>
+        <% chat.img(src: "/photo_avatar.jpg") %>
+      <% end %>
+    <% end %>
+    <% chat.bubble { "It was you who would bring balance to the Force" } %>
+  <% end.html_safe %>
+
+  <%= DaisyUI::Components::Chat.call(:start) do |chat| %>
+    <% chat.avatar do %>
+      <% chat.div(class: "w-10 rounded-full") do %>
+        <% chat.img(src: "/photo_avatar.jpg") %>
+      <% end %>
+    <% end %>
+    <% chat.bubble { "Not leave it in Darkness" } %>
+  <% end.html_safe %>
+</div>

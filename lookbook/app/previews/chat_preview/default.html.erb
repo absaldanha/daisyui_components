@@ -1,0 +1,13 @@
+<div class="w-96">
+  <%= DaisyUI::Components::Chat.call(:start) do |chat| %>
+    <% chat.bubble do %>
+      <% chat.plain "It's over Anakin," %>
+      <% chat.br %>
+      <% chat.plain "I have the high groud." %>
+    <% end %>
+  <% end.html_safe %>
+
+  <%= DaisyUI::Components::Chat.call(:end) do |chat| %>
+    <% chat.bubble { "You underestimate my power!" } %>
+  <% end.html_safe %>
+</div>

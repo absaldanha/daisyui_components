@@ -1,0 +1,29 @@
+<div class="w-96">
+  <%= DaisyUI::Components::Chat.call(:start) do |chat| %>
+    <% chat.bubble(:primary) { "What kind of nonsense is this" } %>
+  <% end.html_safe %>
+
+  <%= DaisyUI::Components::Chat.call(:start) do |chat| %>
+    <% chat.bubble(:secondary) { "Put me on the Council and not make me a Master!??" } %>
+  <% end.html_safe %>
+
+  <%= DaisyUI::Components::Chat.call(:start) do |chat| %>
+    <% chat.bubble(:accent) { "That's never been done in the history of the Jedi. It's insulting!" } %>
+  <% end.html_safe %>
+
+  <%= DaisyUI::Components::Chat.call(:end) do |chat| %>
+    <% chat.bubble(:info) { "Calm down, Anakin." } %>
+  <% end.html_safe %>
+
+  <%= DaisyUI::Components::Chat.call(:end) do |chat| %>
+    <% chat.bubble(:success) { "You have been given a great honor." } %>
+  <% end.html_safe %>
+
+  <%= DaisyUI::Components::Chat.call(:end) do |chat| %>
+    <% chat.bubble(:warning) { "To be on the Council at your age." } %>
+  <% end.html_safe %>
+
+  <%= DaisyUI::Components::Chat.call(:end) do |chat| %>
+    <% chat.bubble(:error) { "It's never happened before." } %>
+  <% end.html_safe %>
+</div>
