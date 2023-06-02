@@ -21,11 +21,11 @@ module DaisyUI
 
       def template
         if @label
-          @label.content { input(type: "checkbox", **full_props) }
+          @label.content { input(**full_props, type: "checkbox") }
 
           render @label
         else
-          input(type: "checkbox", **full_props)
+          input(**full_props, type: "checkbox")
         end
       end
 

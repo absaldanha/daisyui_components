@@ -1,0 +1,21 @@
+<div class="w-40">
+  <%=
+    DaisyUI::Components::FormControl.call do |form_control|
+      form_control.radio(:error, name: "radio-1") do |radio|
+        radio.label do |label|
+          label.text { "Red pill" }
+        end
+      end
+    end.html_safe
+  %>
+
+  <%=
+    DaisyUI::Components::FormControl.call do |form_control|
+      form_control.radio(:info, name: "radio-1", checked: true) do |radio|
+        radio.label do |label|
+          label.text { "Blue pill" }
+        end
+      end
+    end.html_safe
+  %>
+</div>

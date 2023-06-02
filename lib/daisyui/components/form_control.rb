@@ -21,6 +21,10 @@ module DaisyUI
         @control = FileInput.new(...)
       end
 
+      def radio(...)
+        @control = Radio.new(...)
+      end
+
       private
 
       attr_reader :control

@@ -21,7 +21,7 @@ Components:
  - [ ] Tooltip
  - [x] Checkbox
  - [x] File Input
- - [ ] Radio
+ - [x] Radio
  - [ ] Range
  - [ ] Rating
  - [ ] Select
