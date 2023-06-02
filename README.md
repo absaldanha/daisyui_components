@@ -23,7 +23,7 @@ Components:
  - [x] File Input
  - [x] Radio
  - [x] Range
- - [ ] Rating
+ - [x] Rating
  - [ ] Select
  - [ ] Text input
  - [ ] Textarea
