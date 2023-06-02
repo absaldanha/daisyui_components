@@ -20,6 +20,16 @@ module DaisyUI
           assert_selector "input[type='checkbox'][class='checkbox']"
         end
       end
+
+      def test_renders_form_control_with_file_input
+        render FormControl.new do |form_control|
+          form_control.file_input
+        end
+
+        assert_selector "div[class='form-control']" do
+          assert_selector "input[type='file'][class='file-input']"
+        end
+      end
     end
   end
 end
