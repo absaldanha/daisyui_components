@@ -22,7 +22,7 @@ Components:
  - [x] Checkbox
  - [x] File Input
  - [x] Radio
- - [ ] Range
+ - [x] Range
  - [ ] Rating
  - [ ] Select
  - [ ] Text input
