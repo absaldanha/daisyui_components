@@ -17,6 +17,10 @@ module DaisyUI
         @control = Checkbox.new(...)
       end
 
+      def file_input(...)
+        @control = FileInput.new(...)
+      end
+
       private
 
       attr_reader :control

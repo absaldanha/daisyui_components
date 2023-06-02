@@ -20,7 +20,7 @@ Components:
  - [ ] Table
  - [ ] Tooltip
  - [x] Checkbox
- - [ ] File Input
+ - [x] File Input
  - [ ] Radio
  - [ ] Range
  - [ ] Rating
