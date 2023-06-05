@@ -25,6 +25,10 @@ module DaisyUI
         @control = Radio.new(...)
       end
 
+      def select(...)
+        @control = Select.new(...)
+      end
+
       private
 
       attr_reader :control
