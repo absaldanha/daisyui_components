@@ -60,6 +60,16 @@ module DaisyUI
           assert_selector "input[class='input'][type='text']"
         end
       end
+
+      def test_renders_form_control_with_textarea
+        render FormControl.new do |form_control|
+          form_control.textarea
+        end
+
+        assert_selector "div[class='form-control']" do
+          assert_selector "textarea[class='textarea']"
+        end
+      end
     end
   end
 end
