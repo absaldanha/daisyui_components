@@ -25,7 +25,7 @@ Components:
  - [x] Range
  - [x] Rating
  - [x] Select
- - [ ] Text input
+ - [x] Text input
  - [ ] Textarea
  - [ ] Toggle
  - [ ] Artboard
