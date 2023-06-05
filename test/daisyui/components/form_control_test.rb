@@ -50,6 +50,16 @@ module DaisyUI
           assert_selector "select[class='select']"
         end
       end
+
+      def test_renders_form_control_with_input
+        render FormControl.new do |form_control|
+          form_control.input
+        end
+
+        assert_selector "div[class='form-control']" do
+          assert_selector "input[class='input'][type='text']"
+        end
+      end
     end
   end
 end
