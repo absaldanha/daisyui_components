@@ -51,11 +51,15 @@ module DaisyUI
       end
 
       def apply_component_class(hash)
+        return hash unless component_class
+
         hash[:class] = tokens(hash[:class], component_class)
         hash
       end
 
       def apply_modifiers(hash)
+        return hash if applicable_modifers.empty?
+
         modifier_classes = applicable_modifers
           .map { |modifier| modifier[1] }
           .flatten

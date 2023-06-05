@@ -24,7 +24,7 @@ Components:
  - [x] Radio
  - [x] Range
  - [x] Rating
- - [ ] Select
+ - [x] Select
  - [ ] Text input
  - [ ] Textarea
  - [ ] Toggle
