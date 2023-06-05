@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# @logical_path data_display
 class ChatPreview < Lookbook::Preview
   def default
   end

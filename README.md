@@ -26,8 +26,8 @@ Components:
  - [x] Rating
  - [x] Select
  - [x] Text input
- - [ ] Textarea
- - [ ] Toggle
+ - [x] Textarea
+ - [x] Toggle
  - [ ] Artboard
  - [ ] Divider
  - [ ] Drawer

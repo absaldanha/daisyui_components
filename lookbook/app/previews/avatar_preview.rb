@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# @logical_path data_display
 class AvatarPreview < Lookbook::Preview
   def default
     render DaisyUI::Components::Avatar.new do |avatar|

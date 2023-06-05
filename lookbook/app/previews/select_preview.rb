@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# @logical_path data_input
 class SelectPreview < Lookbook::Preview
   def default
     render DaisyUI::Components::Select.new(class: "w-full max-w-xs") do |select|

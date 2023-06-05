@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# @logical_path data_input
 class InputPreview < Lookbook::Preview
   def default
     render DaisyUI::Components::Input.new(class: "w-full max-w-xs", placeholder: "Type here")

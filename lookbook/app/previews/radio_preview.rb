@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# @logical_path data_input
 class RadioPreview < Lookbook::Preview
   def default
   end

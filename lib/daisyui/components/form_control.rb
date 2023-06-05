@@ -37,6 +37,10 @@ module DaisyUI
         @control = Textarea.new(...)
       end
 
+      def toggle(...)
+        @control = Toggle.new(...)
+      end
+
       private
 
       attr_reader :control

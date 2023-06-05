@@ -70,6 +70,16 @@ module DaisyUI
           assert_selector "textarea[class='textarea']"
         end
       end
+
+      def test_renders_form_control_with_toggle
+        render FormControl.new do |form_control|
+          form_control.toggle
+        end
+
+        assert_selector "div[class='form-control']" do
+          assert_selector "input[class='toggle'][type='checkbox']"
+        end
+      end
     end
   end
 end

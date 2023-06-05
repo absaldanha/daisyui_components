@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# @logical_path navigation
 class TabsPreview < Lookbook::Preview
   def default
     render DaisyUI::Components::Tabs.new do |tabs|
