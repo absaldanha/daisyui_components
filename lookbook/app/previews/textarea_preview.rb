@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# @logical_path data_input
 class TextareaPreview < Lookbook::Preview
   def default
     render DaisyUI::Components::Textarea.new(class: "w-full max-w-xs", placeholder: "Bio")

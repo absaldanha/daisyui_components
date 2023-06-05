@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# @logical_path actions
 class ButtonPreview < Lookbook::Preview
   def default
     render DaisyUI::Components::Button.new { "Button" }

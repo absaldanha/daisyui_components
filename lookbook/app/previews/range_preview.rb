@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# @logical_path data_input
 class RangePreview < Lookbook::Preview
   def default
     render DaisyUI::Components::Range.new(min: 0, max: 100, value: 40)

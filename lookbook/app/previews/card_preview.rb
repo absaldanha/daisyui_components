@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# @logical_path data_display
 class CardPreview < Lookbook::Preview
   def default
     render DaisyUI::Components::Card.new(class: "w-96 bg-base-100 shadow-xl") do |card|

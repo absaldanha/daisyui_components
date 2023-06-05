@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# @logical_path actions
 class SwapPreview < Lookbook::Preview
   def swap_text
     render DaisyUI::Components::Swap.new do |swap|

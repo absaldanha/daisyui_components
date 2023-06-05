@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# @logical_path data_display
 class BadgePreview < Lookbook::Preview
   def default
     render DaisyUI::Components::Badge.new { "Badge" }

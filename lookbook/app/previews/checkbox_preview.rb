@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# @logical_path data_input
 class CheckboxPreview < Lookbook::Preview
   def default
     render DaisyUI::Components::Checkbox.new(checked: true)

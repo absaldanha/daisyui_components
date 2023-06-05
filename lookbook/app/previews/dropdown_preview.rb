@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# @logical_path actions
 class DropdownPreview < Lookbook::Preview
   def default
     render DaisyUI::Components::Dropdown.new do |dropdown|
