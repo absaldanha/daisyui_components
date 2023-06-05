@@ -33,6 +33,10 @@ module DaisyUI
         @control = Input.new(...)
       end
 
+      def textarea(...)
+        @control = Textarea.new(...)
+      end
+
       private
 
       attr_reader :control

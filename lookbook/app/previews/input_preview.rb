@@ -76,4 +76,8 @@ class InputPreview < Lookbook::Preview
     render DaisyUI::Components::Input.new(:xs, :bordered, class: "w-full max-w-xs", placeholder: "Type here")
   end
   # @!endgroup
+
+  def disabled
+    render DaisyUI::Components::Input.new(:bordered, class: "w-full max-w-xs", placeholder: "You can't touch this", disabled: true)
+  end
 end
